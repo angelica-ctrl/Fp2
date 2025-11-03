@@ -1,46 +1,60 @@
-/* Basic styling for all pages - walang babaguhin sa original content */
-
-/* Body styling */
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
 }
 
-/* Navbar styling */
+/* Navbar */
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    background-color: #003366;
+    padding: 10px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #000;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #ffcc00;
 }
 
-/* Form styling */
+/* Headings */
+h1, h2, h3 {
+    color: #003366;
+}
+
+/* Forms */
 form input, form select, form textarea, form button {
     display: block;
-    margin: 10px 0;
-    padding: 8px;
+    margin: 8px 0;
+    padding: 10px;
     width: 100%;
     max-width: 400px;
 }
 
 form button {
-    cursor: pointer;
-    background-color: #007BFF;
+    background-color: #003366;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #0055a5;
+}
+
+/* Mission/Vision section */
+.mission, .vision {
+    background-color: #e6f0ff;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #003366;
 }
