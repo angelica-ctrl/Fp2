@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Voice Spartans</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-VoiceSpartan | Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">E-Voice Spartans</div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Suggestions</a></li>
-      <li><a href="#">Complaints</a></li>
-      <li><a href="#">Profile</a></li>
-    </ul>
-  </nav>
+  <header class="header">
+    <img class="bg" src="https://i.ibb.co/zhgmm4wb/53cf5725-b911-47e4-83e0-92b7506c6382.jpg" alt="Lipa City background">
+    <div class="slant"></div>
+    <div class="text">
+      <h1>E-VoiceSpartan</h1>
+      <p class="lead">Your voice matter — share your thoughts and be heard!</p>
+      <p class="small">Leading Innovations, Transforming Lives, Building the Nation</p>
+    </div>
+  </header>
 
-  <!-- Main Content -->
-  <main>
-    <section class="dashboard">
-      <h1>Welcome, User!</h1>
-      <p>This is your dashboard. All features are visible here but non-functional for now.</p>
-    </section>
-    
-    <section class="cards">
-      <div class="card">Suggestions: 12</div>
-      <div class="card">Complaints: 5</div>
-      <div class="card">Resolved: 8</div>
-    </section>
-  </main>
+  <section class="section" id="login-section">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="text" placeholder="Student ID" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#" id="showSignup">Sign up here</a></p>
+      </form>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 E-Voice Spartans. All rights reserved.</p>
-  </footer>
+  <section class="section" id="signup-section">
+    <div class="login-box">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="signup-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" class="mi" placeholder="M.I" maxlength="1">
+          <input type="text" placeholder="Last Name" required>
+        </div>
+        <input type="email" placeholder="GSuite account" required>
+        <input type="text" placeholder="Student ID" required>
+        <input type="text" placeholder="Contact Number" required>
+        <input type="password" placeholder="Password (minimum 5 characters)" required minlength="5">
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="#" id="backToLogin">Login here</a></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/script.js" defer></script>
 </body>
 </html>
