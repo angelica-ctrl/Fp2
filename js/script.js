@@ -1,11 +1,23 @@
-// Placeholder JS file - walang babaguhin sa original content
+const loginForm = document.getElementById('loginForm');
+const loginSection = document.getElementById('login-section');
+const signupSection = document.getElementById('signup-section');
+const showSignup = document.getElementById('showSignup');
+const backToLogin = document.getElementById('backToLogin');
 
-// Example: alert kapag nag-submit (pwede mo tanggalin o i-comment)
-document.addEventListener('DOMContentLoaded', function() {
-    const forms = document.querySelectorAll('form');
-    forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
-            // alert('Form submitted!');  // Optional, comment out if not needed
-        });
-    });
+loginForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // Redirect to homepage.html
+  window.location.href = "homepage.html";
+});
+
+showSignup.addEventListener('click', (e) => {
+  e.preventDefault();
+  loginSection.style.display = 'none';
+  signupSection.style.display = 'flex';
+});
+
+backToLogin.addEventListener('click', (e) => {
+  e.preventDefault();
+  signupSection.style.display = 'none';
+  loginSection.style.display = 'flex';
 });
